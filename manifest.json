@@ -1,0 +1,18 @@
+{
+  "name": "Time Not Wasted",
+  "description": "Time Not Wasted prevents you from visiting facebook, twitter, instagram, or youtube when enabled.",
+  "version": "1.0",
+  "author":  "Anna Sedlar",
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["url-changer.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Don't waste your time!",
+    "default_icon": "tab-icon.png"
+  },
+  "manifest_version": 2
+}
