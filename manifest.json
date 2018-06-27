@@ -1,18 +1,21 @@
 {
   "name": "Time Not Wasted",
-  "description": "Time Not Wasted prevents you from visiting twitter when enabled.",
   "version": "1.0",
-  "author":  "Anna Sedlar",
-  "permissions": [
+  "description": "Time Not Wasted prevents you from visiting twitter when you should be learning",
+  "manifest_version": 2,
+  "icons" : {
+    "48" : "tab_icon.png",
+    "128" : "tab_icon.png"
+  },
+  "browser_action": {
+    "default_icon" : "tab_icon.png",
+    "default_title" : "Don't waste your time!"
+  },
+  "permissions" : [
     "tabs"
   ],
   "background": {
-    "scripts": ["url-changer.js"],
+    "scripts": ["url_changer.js"],
     "persistent": false
-  },
-  "browser_action": {
-    "default_title": "Don't waste your time!",
-    "default_icon": "tab-icon.png"
-  },
-  "manifest_version": 2
+  }
 }
